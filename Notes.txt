@@ -1,0 +1,28 @@
+To Do for SnL:
+
+Formulate toggling after roll. 
+
+using P.findOne({canRoll: true}), roll and amend first score, then set to false, after that check if findOne({canRoll: true}) is true. If undefined, then reset all players and their canRolls to be True.
+
+
+The application will support exactly 4 players.
+There will be availability of snakes and ladders.
+At any one time, no 2 players would have identical scores.
+
+Hmm... how to make availability of snakes and ladders....
+Each square is a function? Or maybe just a dictionary of snakes and or ladders. E.g. {3:2, 6:-2, 7:4}. so if value is in the dictionary, will update score again by value. If not, then no change.
+
+To check if 2 players have identical scores, before amending check if any player has the same score. maybe can use a while loop in case consequetive scores. If same score, add the new one by 1. yes while loop.
+
+while (P.findOne({score: newscore}))
+	score += 1
+
+When someone's score reaches 100, reset button appears, and roll button disappears. Winning announcement also made.
+
+
+
+=======================================================================================================================================================
+Left with fixing the reset button and declaration of winner
+
+
+ZWjnDCNeQu2CyevoX

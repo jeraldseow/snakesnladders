@@ -1,0 +1,54 @@
+<head>
+    <title>Snakes and Ladders!</title>
+</head>
+<body>
+
+    <h1>Snakes And Ladders</h1>
+    {{> loginButtons}}
+    <br><br>
+    
+    {{> lead}}
+    
+</body>
+
+
+<template name = "lead">
+{{#if currentUser}}
+	{{#if numPlayers}}
+		{{> addPlayerForm}}
+	{{/if}}
+
+	{{#each player}}
+		<li class = "player {{selectedOne}}"> {{name}} : {{score}}, id: {{_id}}</li>
+		{{/each}}
+
+	{{#if selectedPlayer}}
+		<!-- <li><button class = "increment"> Give 5 points </button> <button class = "dec"> Take 5 points </button></li> -->
+		<li>Selected Player: {{selectedPlayer.name}}</li><br><button class = "remove"> Remove player </button><br>
+	{{/if}}
+
+	<br>
+
+	{{#if canPlay}}
+		<button class = "roll"> Roll the dice! </button>
+	{{/if}}
+	<br>
+	<br>
+	{{#if gameOver}}
+		<h1> The winner is {{findWinner}} </h1>
+		<button class = "reset"> Reset this game! </button>
+	{{/if}}
+
+{{else}}
+<p> Please log in to view the leaderboard </p>
+{{/if}}
+
+</template>
+
+<template name = "addPlayerForm">
+	<form>
+		<input type= "text" name = "playerName2">
+		<input type= "submit" value = "Add a Player!">
+	</form>
+
+</template>

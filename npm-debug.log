@@ -1,0 +1,654 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Users\\Jerald\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.1\\mt-os.windows.x86_32\\dev_bundle\\bin\\node.exe',
+1 verbose cli   'C:\\Users\\Jerald\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.1\\mt-os.windows.x86_32\\dev_bundle\\lib\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'bcrypt' ]
+2 info using npm@3.10.6
+3 info using node@v4.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bcrypt
+8 silly fetchNamedPackageData bcrypt
+9 silly mapToRegistry name bcrypt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bcrypt',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'bcrypt',
+12 silly mapToRegistry   name: 'bcrypt',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+14 verbose request uri https://registry.npmjs.org/bcrypt
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:56:18 AM
+17 verbose request id 9af7c51dbf8f2505
+18 http request GET https://registry.npmjs.org/bcrypt
+19 http 200 https://registry.npmjs.org/bcrypt
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"CR0LH900QPH9SNVEBDQ6WA8Z1"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '11846',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Fri, 26 Aug 2016 03:56:19 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '2',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-nrt6120-NRT',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1472183779.343134,VS0,VE0',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"CR0LH900QPH9SNVEBDQ6WA8Z1"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '11846',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Fri, 26 Aug 2016 03:56:19 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '2',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-nrt6120-NRT',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1472183779.343134,VS0,VE0',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving bcrypt to C:\Users\Jerald\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt\.cache.json
+23 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 verbose makeDirectory C:\Users\Jerald\AppData\Roaming\npm-cache creation not in flight; initializing
+25 verbose makeCacheDir UID & GID are irrelevant on win32
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule bcrypt@0.8.7 checking installable status
+39 silly cache add args [ 'bcrypt', null ]
+40 verbose cache add spec bcrypt
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'bcrypt',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'bcrypt',
+41 silly cache add   name: 'bcrypt',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed bcrypt@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for bcrypt
+44 info addNameTag [ 'bcrypt', 'latest' ]
+45 silly mapToRegistry name bcrypt
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'bcrypt',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'bcrypt',
+48 silly mapToRegistry   name: 'bcrypt',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+50 verbose addNameTag registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+51 verbose get https://registry.npmjs.org/bcrypt not expired, no request
+52 silly addNameTag next cb for bcrypt with tag latest
+53 silly addNamed bcrypt@0.8.7
+54 verbose addNamed "0.8.7" is a plain semver version for bcrypt
+55 silly mapToRegistry name bcrypt
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: 'bcrypt',
+58 silly mapToRegistry   scope: null,
+58 silly mapToRegistry   escapedName: 'bcrypt',
+58 silly mapToRegistry   name: 'bcrypt',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+60 verbose addRemoteTarball https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.7.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.7.tgz',
+61 verbose addRemoteTarball   'bc3875a9afd0a7b2cd231a6a7f218a5ce156b093' ]
+62 info retry fetch attempt 1 at 11:56:19 AM
+63 info attempt registry request try #1 at 11:56:19 AM
+64 http fetch GET https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.7.tgz
+65 http fetch 200 https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.7.tgz
+66 silly fetchAndShaCheck shasum bc3875a9afd0a7b2cd231a6a7f218a5ce156b093
+67 verbose addTmpTarball C:\Users\Jerald\AppData\Local\Temp\npm-6504-e32bb832\registry.npmjs.org\bcrypt\-\bcrypt-0.8.7.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for bcrypt@0.8.7
+69 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+70 silly cache afterAdd bcrypt@0.8.7
+71 verbose afterAdd C:\Users\Jerald\AppData\Roaming\npm-cache\bcrypt\0.8.7\package\package.json not in flight; writing
+72 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+73 verbose afterAdd C:\Users\Jerald\AppData\Roaming\npm-cache\bcrypt\0.8.7\package\package.json written
+74 silly fetchNamedPackageData bindings
+75 silly mapToRegistry name bindings
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry data Result {
+78 silly mapToRegistry   raw: 'bindings',
+78 silly mapToRegistry   scope: null,
+78 silly mapToRegistry   escapedName: 'bindings',
+78 silly mapToRegistry   name: 'bindings',
+78 silly mapToRegistry   rawSpec: '',
+78 silly mapToRegistry   spec: 'latest',
+78 silly mapToRegistry   type: 'tag' }
+79 silly mapToRegistry uri https://registry.npmjs.org/bindings
+80 silly fetchNamedPackageData nan
+81 silly mapToRegistry name nan
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry data Result {
+84 silly mapToRegistry   raw: 'nan',
+84 silly mapToRegistry   scope: null,
+84 silly mapToRegistry   escapedName: 'nan',
+84 silly mapToRegistry   name: 'nan',
+84 silly mapToRegistry   rawSpec: '',
+84 silly mapToRegistry   spec: 'latest',
+84 silly mapToRegistry   type: 'tag' }
+85 silly mapToRegistry uri https://registry.npmjs.org/nan
+86 verbose request uri https://registry.npmjs.org/bindings
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 11:56:19 AM
+89 http request GET https://registry.npmjs.org/bindings
+90 verbose request uri https://registry.npmjs.org/nan
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 11:56:19 AM
+93 http request GET https://registry.npmjs.org/nan
+94 http 200 https://registry.npmjs.org/bindings
+95 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+95 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+95 verbose headers   'content-type': 'application/json',
+95 verbose headers   'content-encoding': 'gzip',
+95 verbose headers   'cache-control': 'max-age=300',
+95 verbose headers   'content-length': '3804',
+95 verbose headers   'accept-ranges': 'bytes',
+95 verbose headers   date: 'Fri, 26 Aug 2016 03:56:19 GMT',
+95 verbose headers   via: '1.1 varnish',
+95 verbose headers   age: '219',
+95 verbose headers   connection: 'keep-alive',
+95 verbose headers   'x-served-by': 'cache-nrt6120-NRT',
+95 verbose headers   'x-cache': 'HIT',
+95 verbose headers   'x-cache-hits': '3',
+95 verbose headers   'x-timer': 'S1472183779.597072,VS0,VE0',
+95 verbose headers   vary: 'Accept-Encoding' }
+96 silly get cb [ 200,
+96 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+96 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+96 silly get     'content-type': 'application/json',
+96 silly get     'content-encoding': 'gzip',
+96 silly get     'cache-control': 'max-age=300',
+96 silly get     'content-length': '3804',
+96 silly get     'accept-ranges': 'bytes',
+96 silly get     date: 'Fri, 26 Aug 2016 03:56:19 GMT',
+96 silly get     via: '1.1 varnish',
+96 silly get     age: '219',
+96 silly get     connection: 'keep-alive',
+96 silly get     'x-served-by': 'cache-nrt6120-NRT',
+96 silly get     'x-cache': 'HIT',
+96 silly get     'x-cache-hits': '3',
+96 silly get     'x-timer': 'S1472183779.597072,VS0,VE0',
+96 silly get     vary: 'Accept-Encoding' } ]
+97 verbose get saving bindings to C:\Users\Jerald\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+98 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+99 silly resolveWithNewModule bindings@1.2.1 checking installable status
+100 silly cache add args [ 'bindings@1.2.1', null ]
+101 verbose cache add spec bindings@1.2.1
+102 silly cache add parsed spec Result {
+102 silly cache add   raw: 'bindings@1.2.1',
+102 silly cache add   scope: null,
+102 silly cache add   escapedName: 'bindings',
+102 silly cache add   name: 'bindings',
+102 silly cache add   rawSpec: '1.2.1',
+102 silly cache add   spec: '1.2.1',
+102 silly cache add   type: 'version' }
+103 silly addNamed bindings@1.2.1
+104 verbose addNamed "1.2.1" is a plain semver version for bindings
+105 silly mapToRegistry name bindings
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry data Result {
+108 silly mapToRegistry   raw: 'bindings',
+108 silly mapToRegistry   scope: null,
+108 silly mapToRegistry   escapedName: 'bindings',
+108 silly mapToRegistry   name: 'bindings',
+108 silly mapToRegistry   rawSpec: '',
+108 silly mapToRegistry   spec: 'latest',
+108 silly mapToRegistry   type: 'tag' }
+109 silly mapToRegistry uri https://registry.npmjs.org/bindings
+110 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+111 verbose get https://registry.npmjs.org/bindings not expired, no request
+112 silly mapToRegistry name bindings
+113 silly mapToRegistry using default registry
+114 silly mapToRegistry registry https://registry.npmjs.org/
+115 silly mapToRegistry data Result {
+115 silly mapToRegistry   raw: 'bindings',
+115 silly mapToRegistry   scope: null,
+115 silly mapToRegistry   escapedName: 'bindings',
+115 silly mapToRegistry   name: 'bindings',
+115 silly mapToRegistry   rawSpec: '',
+115 silly mapToRegistry   spec: 'latest',
+115 silly mapToRegistry   type: 'tag' }
+116 silly mapToRegistry uri https://registry.npmjs.org/bindings
+117 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+118 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+118 verbose addRemoteTarball   '14ad6113812d2d37d72e67b4cacb4bb726505f11' ]
+119 info retry fetch attempt 1 at 11:56:19 AM
+120 info attempt registry request try #1 at 11:56:19 AM
+121 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+122 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+123 silly fetchAndShaCheck shasum 14ad6113812d2d37d72e67b4cacb4bb726505f11
+124 verbose addTmpTarball C:\Users\Jerald\AppData\Local\Temp\npm-6504-e32bb832\registry.npmjs.org\bindings\-\bindings-1.2.1.tgz not in flight; adding
+125 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.1
+126 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+127 silly cache afterAdd bindings@1.2.1
+128 verbose afterAdd C:\Users\Jerald\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+129 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+130 verbose afterAdd C:\Users\Jerald\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+131 http 200 https://registry.npmjs.org/nan
+132 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+132 verbose headers   etag: '"NAY6YRKIZAXUCU18M1YHIEA2"',
+132 verbose headers   'content-type': 'application/json',
+132 verbose headers   'content-encoding': 'gzip',
+132 verbose headers   'cache-control': 'max-age=300',
+132 verbose headers   'content-length': '17135',
+132 verbose headers   'accept-ranges': 'bytes',
+132 verbose headers   date: 'Fri, 26 Aug 2016 03:56:19 GMT',
+132 verbose headers   via: '1.1 varnish',
+132 verbose headers   age: '153',
+132 verbose headers   connection: 'keep-alive',
+132 verbose headers   'x-served-by': 'cache-nrt6126-NRT',
+132 verbose headers   'x-cache': 'HIT',
+132 verbose headers   'x-cache-hits': '4',
+132 verbose headers   'x-timer': 'S1472183779.748644,VS0,VE0',
+132 verbose headers   vary: 'Accept-Encoding' }
+133 silly get cb [ 200,
+133 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+133 silly get     etag: '"NAY6YRKIZAXUCU18M1YHIEA2"',
+133 silly get     'content-type': 'application/json',
+133 silly get     'content-encoding': 'gzip',
+133 silly get     'cache-control': 'max-age=300',
+133 silly get     'content-length': '17135',
+133 silly get     'accept-ranges': 'bytes',
+133 silly get     date: 'Fri, 26 Aug 2016 03:56:19 GMT',
+133 silly get     via: '1.1 varnish',
+133 silly get     age: '153',
+133 silly get     connection: 'keep-alive',
+133 silly get     'x-served-by': 'cache-nrt6126-NRT',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '4',
+133 silly get     'x-timer': 'S1472183779.748644,VS0,VE0',
+133 silly get     vary: 'Accept-Encoding' } ]
+134 verbose get saving nan to C:\Users\Jerald\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+135 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+136 silly resolveWithNewModule nan@2.3.5 checking installable status
+137 silly cache add args [ 'nan@2.3.5', null ]
+138 verbose cache add spec nan@2.3.5
+139 silly cache add parsed spec Result {
+139 silly cache add   raw: 'nan@2.3.5',
+139 silly cache add   scope: null,
+139 silly cache add   escapedName: 'nan',
+139 silly cache add   name: 'nan',
+139 silly cache add   rawSpec: '2.3.5',
+139 silly cache add   spec: '2.3.5',
+139 silly cache add   type: 'version' }
+140 silly addNamed nan@2.3.5
+141 verbose addNamed "2.3.5" is a plain semver version for nan
+142 silly mapToRegistry name nan
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry data Result {
+145 silly mapToRegistry   raw: 'nan',
+145 silly mapToRegistry   scope: null,
+145 silly mapToRegistry   escapedName: 'nan',
+145 silly mapToRegistry   name: 'nan',
+145 silly mapToRegistry   rawSpec: '',
+145 silly mapToRegistry   spec: 'latest',
+145 silly mapToRegistry   type: 'tag' }
+146 silly mapToRegistry uri https://registry.npmjs.org/nan
+147 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+148 verbose get https://registry.npmjs.org/nan not expired, no request
+149 silly mapToRegistry name nan
+150 silly mapToRegistry using default registry
+151 silly mapToRegistry registry https://registry.npmjs.org/
+152 silly mapToRegistry data Result {
+152 silly mapToRegistry   raw: 'nan',
+152 silly mapToRegistry   scope: null,
+152 silly mapToRegistry   escapedName: 'nan',
+152 silly mapToRegistry   name: 'nan',
+152 silly mapToRegistry   rawSpec: '',
+152 silly mapToRegistry   spec: 'latest',
+152 silly mapToRegistry   type: 'tag' }
+153 silly mapToRegistry uri https://registry.npmjs.org/nan
+154 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.3.5.tgz not in flight; adding
+155 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz',
+155 verbose addRemoteTarball   '822a0dc266290ce4cd3a12282ca3e7e364668a08' ]
+156 info retry fetch attempt 1 at 11:56:19 AM
+157 info attempt registry request try #1 at 11:56:19 AM
+158 http fetch GET https://registry.npmjs.org/nan/-/nan-2.3.5.tgz
+159 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.3.5.tgz
+160 silly fetchAndShaCheck shasum 822a0dc266290ce4cd3a12282ca3e7e364668a08
+161 verbose addTmpTarball C:\Users\Jerald\AppData\Local\Temp\npm-6504-e32bb832\registry.npmjs.org\nan\-\nan-2.3.5.tgz not in flight; adding
+162 verbose addTmpTarball already have metadata; skipping unpack for nan@2.3.5
+163 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+164 silly cache afterAdd nan@2.3.5
+165 verbose afterAdd C:\Users\Jerald\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json not in flight; writing
+166 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+167 verbose afterAdd C:\Users\Jerald\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json written
+168 silly loadAllDepsIntoIdealTree Finishing
+169 silly loadIdealTree Finishing
+170 silly currentTree cde
+171 silly idealTree cde
+171 silly idealTree +-- bcrypt@0.8.7
+171 silly idealTree +-- bindings@1.2.1
+171 silly idealTree `-- nan@2.3.5
+172 silly generateActionsToTake Starting
+173 silly install generateActionsToTake
+174 silly generateActionsToTake Finishing
+175 silly diffTrees action count 3
+176 silly diffTrees add bindings@1.2.1
+177 silly diffTrees add nan@2.3.5
+178 silly diffTrees add bcrypt@0.8.7
+179 silly decomposeActions action count 24
+180 silly decomposeActions fetch bindings@1.2.1
+181 silly decomposeActions extract bindings@1.2.1
+182 silly decomposeActions test bindings@1.2.1
+183 silly decomposeActions preinstall bindings@1.2.1
+184 silly decomposeActions build bindings@1.2.1
+185 silly decomposeActions install bindings@1.2.1
+186 silly decomposeActions postinstall bindings@1.2.1
+187 silly decomposeActions finalize bindings@1.2.1
+188 silly decomposeActions fetch nan@2.3.5
+189 silly decomposeActions extract nan@2.3.5
+190 silly decomposeActions test nan@2.3.5
+191 silly decomposeActions preinstall nan@2.3.5
+192 silly decomposeActions build nan@2.3.5
+193 silly decomposeActions install nan@2.3.5
+194 silly decomposeActions postinstall nan@2.3.5
+195 silly decomposeActions finalize nan@2.3.5
+196 silly decomposeActions fetch bcrypt@0.8.7
+197 silly decomposeActions extract bcrypt@0.8.7
+198 silly decomposeActions test bcrypt@0.8.7
+199 silly decomposeActions preinstall bcrypt@0.8.7
+200 silly decomposeActions build bcrypt@0.8.7
+201 silly decomposeActions install bcrypt@0.8.7
+202 silly decomposeActions postinstall bcrypt@0.8.7
+203 silly decomposeActions finalize bcrypt@0.8.7
+204 silly executeActions Starting
+205 silly install executeActions
+206 silly doSerial global-install 0
+207 silly doParallel fetch 3
+208 verbose correctMkdir C:\Users\Jerald\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+209 verbose makeDirectory C:\Users\Jerald\AppData\Roaming\npm-cache\_locks creation not in flight; initializing
+210 verbose makeCacheDir UID & GID are irrelevant on win32
+211 verbose lock using C:\Users\Jerald\AppData\Roaming\npm-cache\_locks\staging-e6581bcd3e220501.lock for E:\Meteor\cde\node_modules\.staging
+212 silly doParallel extract 3
+213 silly extract bindings@1.2.1
+214 silly extract nan@2.3.5
+215 silly extract bcrypt@0.8.7
+216 verbose unbuild node_modules\.staging\nan-5392c550
+217 verbose unbuild node_modules\.staging\bindings-912fdcce
+218 verbose unbuild node_modules\.staging\bcrypt-28a107aa
+219 silly gentlyRm E:\Meteor\cde\node_modules\.staging\nan-5392c550 is being purged from base E:\Meteor\cde
+220 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\nan-5392c550
+221 silly gentlyRm E:\Meteor\cde\node_modules\.staging\bindings-912fdcce is being purged from base E:\Meteor\cde
+222 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\bindings-912fdcce
+223 verbose tar unpack C:\Users\Jerald\AppData\Roaming\npm-cache\nan\2.3.5\package.tgz
+224 verbose tar unpacking to E:\Meteor\cde\node_modules\.staging\nan-5392c550
+225 silly gentlyRm E:\Meteor\cde\node_modules\.staging\nan-5392c550 is being purged
+226 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\nan-5392c550
+227 verbose tar unpack C:\Users\Jerald\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+228 verbose tar unpacking to E:\Meteor\cde\node_modules\.staging\bindings-912fdcce
+229 silly gentlyRm E:\Meteor\cde\node_modules\.staging\bindings-912fdcce is being purged
+230 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\bindings-912fdcce
+231 silly gentlyRm E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa is being purged from base E:\Meteor\cde
+232 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa
+233 silly gunzTarPerm modes [ '777', '666' ]
+234 silly gunzTarPerm modes [ '777', '666' ]
+235 verbose tar unpack C:\Users\Jerald\AppData\Roaming\npm-cache\bcrypt\0.8.7\package.tgz
+236 verbose tar unpacking to E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa
+237 silly gentlyRm E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa is being purged
+238 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa
+239 silly gunzTarPerm modes [ '777', '666' ]
+240 silly gunzTarPerm extractEntry package.json
+241 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+242 silly gunzTarPerm extractEntry package.json
+243 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+244 silly gunzTarPerm extractEntry package.json
+245 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+246 silly gunzTarPerm extractEntry README.md
+247 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+248 silly gunzTarPerm extractEntry README.md
+249 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+250 silly gunzTarPerm extractEntry bindings.js
+251 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+252 silly gunzTarPerm extractEntry include_dirs.js
+253 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+254 silly gunzTarPerm extractEntry .npmignore
+255 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+256 silly gunzTarPerm extractEntry README.md
+257 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+258 silly gunzTarPerm extractEntry nan_converters.h
+259 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+260 silly gunzTarPerm extractEntry LICENSE.md
+261 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+262 silly gunzTarPerm extractEntry doc/node_misc.md
+263 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+264 silly gunzTarPerm extractEntry LICENSE
+265 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+266 silly gunzTarPerm extractEntry bcrypt.js
+267 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
+268 silly gunzTarPerm extractEntry Makefile
+269 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+270 silly gunzTarPerm extractEntry .travis.yml
+271 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+272 silly gunzTarPerm extractEntry CHANGELOG.md
+273 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+274 silly gunzTarPerm extractEntry binding.gyp
+275 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+276 silly gunzTarPerm extractEntry examples/async_compare.js
+277 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
+278 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+279 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
+280 silly gunzTarPerm extractEntry test/async.js
+281 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+282 silly gunzTarPerm extractEntry test/repetitions.js
+283 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
+284 silly gunzTarPerm extractEntry test/sync.js
+285 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+286 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+287 silly gunzTarPerm modified mode [ 'ISSUE_TEMPLATE.md', 420, 438 ]
+288 silly gunzTarPerm extractEntry src/bcrypt.cc
+289 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
+290 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+291 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
+292 silly gunzTarPerm extractEntry src/blowfish.cc
+293 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
+294 silly gunzTarPerm extractEntry src/node_blf.h
+295 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
+296 silly gunzTarPerm extractEntry werker.yml
+297 silly gunzTarPerm modified mode [ 'werker.yml', 420, 438 ]
+298 silly gunzTarPerm extractEntry doc/asyncworker.md
+299 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+300 silly gunzTarPerm extractEntry doc/callback.md
+301 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+302 silly gunzTarPerm extractEntry doc/converters.md
+303 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+304 silly gunzTarPerm extractEntry doc/errors.md
+305 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+306 silly gunzTarPerm extractEntry doc/maybe_types.md
+307 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+308 silly gunzTarPerm extractEntry doc/methods.md
+309 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+310 silly gunzTarPerm extractEntry doc/new.md
+311 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+312 silly gunzTarPerm extractEntry doc/buffers.md
+313 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+314 silly gunzTarPerm extractEntry doc/object_wrappers.md
+315 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+316 silly gentlyRm E:\Meteor\cde\node_modules\.staging\bindings-912fdcce\node_modules is being purged
+317 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\bindings-912fdcce\node_modules
+318 silly gunzTarPerm extractEntry doc/persistent.md
+319 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+320 silly gunzTarPerm extractEntry doc/scopes.md
+321 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+322 silly gunzTarPerm extractEntry doc/script.md
+323 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+324 silly gunzTarPerm extractEntry doc/string_bytes.md
+325 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+326 silly gunzTarPerm extractEntry doc/v8_internals.md
+327 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+328 silly gunzTarPerm extractEntry doc/v8_misc.md
+329 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+330 silly gunzTarPerm extractEntry nan.h
+331 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+332 silly gunzTarPerm extractEntry nan_callbacks.h
+333 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+334 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+335 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+336 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+337 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+338 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+339 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+340 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+341 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+342 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+343 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+344 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+345 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+346 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+347 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+348 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+349 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+350 silly gunzTarPerm extractEntry nan_new.h
+351 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+352 silly gunzTarPerm extractEntry nan_object_wrap.h
+353 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+354 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+355 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+356 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+357 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+358 silly gunzTarPerm extractEntry nan_string_bytes.h
+359 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+360 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+361 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+362 silly gunzTarPerm extractEntry nan_weak.h
+363 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+364 silly gunzTarPerm extractEntry CHANGELOG.md
+365 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+366 silly gunzTarPerm extractEntry tools/package.json
+367 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+368 silly gunzTarPerm extractEntry tools/README.md
+369 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+370 silly gunzTarPerm extractEntry tools/1to2.js
+371 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+372 silly gentlyRm E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa\node_modules is being purged
+373 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa\node_modules
+374 silly gentlyRm E:\Meteor\cde\node_modules\.staging\nan-5392c550\node_modules is being purged
+375 verbose gentlyRm don't care about contents; nuking E:\Meteor\cde\node_modules\.staging\nan-5392c550\node_modules
+376 silly doParallel preinstall 3
+377 silly preinstall bindings@1.2.1 E:\Meteor\cde\node_modules\.staging\bindings-912fdcce
+378 info lifecycle bindings@1.2.1~preinstall: bindings@1.2.1
+379 silly preinstall nan@2.3.5 E:\Meteor\cde\node_modules\.staging\nan-5392c550
+380 info lifecycle nan@2.3.5~preinstall: nan@2.3.5
+381 silly preinstall bcrypt@0.8.7 E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa
+382 info lifecycle bcrypt@0.8.7~preinstall: bcrypt@0.8.7
+383 silly lifecycle bindings@1.2.1~preinstall: no script for preinstall, continuing
+384 silly lifecycle nan@2.3.5~preinstall: no script for preinstall, continuing
+385 silly lifecycle bcrypt@0.8.7~preinstall: no script for preinstall, continuing
+386 silly doReverseSerial remove 0
+387 silly doSerial move 0
+388 silly doSerial finalize 3
+389 silly finalize E:\Meteor\cde\node_modules\bindings
+390 silly finalize E:\Meteor\cde\node_modules\nan
+391 silly finalize E:\Meteor\cde\node_modules\bcrypt
+392 silly doSerial build 3
+393 silly build bindings@1.2.1
+394 info linkStuff bindings@1.2.1
+395 silly linkStuff bindings@1.2.1 has E:\Meteor\cde\node_modules as its parent node_modules
+396 verbose linkBins bindings@1.2.1
+397 verbose linkMans bindings@1.2.1
+398 silly build nan@2.3.5
+399 info linkStuff nan@2.3.5
+400 silly linkStuff nan@2.3.5 has E:\Meteor\cde\node_modules as its parent node_modules
+401 verbose linkBins nan@2.3.5
+402 verbose linkMans nan@2.3.5
+403 silly build bcrypt@0.8.7
+404 info linkStuff bcrypt@0.8.7
+405 silly linkStuff bcrypt@0.8.7 has E:\Meteor\cde\node_modules as its parent node_modules
+406 verbose linkBins bcrypt@0.8.7
+407 verbose linkMans bcrypt@0.8.7
+408 silly doSerial global-link 0
+409 silly doParallel update-linked 0
+410 silly doSerial install 3
+411 silly install bindings@1.2.1 E:\Meteor\cde\node_modules\.staging\bindings-912fdcce
+412 info lifecycle bindings@1.2.1~install: bindings@1.2.1
+413 silly lifecycle bindings@1.2.1~install: no script for install, continuing
+414 silly install nan@2.3.5 E:\Meteor\cde\node_modules\.staging\nan-5392c550
+415 info lifecycle nan@2.3.5~install: nan@2.3.5
+416 silly lifecycle nan@2.3.5~install: no script for install, continuing
+417 silly install bcrypt@0.8.7 E:\Meteor\cde\node_modules\.staging\bcrypt-28a107aa
+418 info lifecycle bcrypt@0.8.7~install: bcrypt@0.8.7
+419 verbose lifecycle bcrypt@0.8.7~install: unsafe-perm in lifecycle true
+420 verbose lifecycle bcrypt@0.8.7~install: PATH: C:\Users\Jerald\AppData\Local\.meteor\packages\meteor-tool\1.4.1\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\bin\node-gyp-bin;E:\Meteor\cde\node_modules\bcrypt\node_modules\.bin;E:\Meteor\cde\node_modules\.bin;C:\Users\Jerald\AppData\Local\.meteor\packages\meteor-tool\1.4.1\mt-os.windows.x86_32\dev_bundle\bin;C:\Users\Jerald\AppData\Local\.meteor\packages\meteor-tool\1.4.1\mt-os.windows.x86_32\dev_bundle\lib\node_modules\.bin;E:\NUS\Orbital\Python;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Program Files (x86)\Google\google_appengine\;C:\Users\Jerald\AppData\Local\Microsoft\WindowsApps;C:\Users\Jerald\AppData\Local\.meteor\
+421 verbose lifecycle bcrypt@0.8.7~install: CWD: E:\Meteor\cde\node_modules\bcrypt
+422 silly lifecycle bcrypt@0.8.7~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+423 silly lifecycle bcrypt@0.8.7~install: Returned: code: 1  signal: null
+424 info lifecycle bcrypt@0.8.7~install: Failed to exec install script
+425 verbose unlock done using C:\Users\Jerald\AppData\Roaming\npm-cache\_locks\staging-e6581bcd3e220501.lock for E:\Meteor\cde\node_modules\.staging
+426 silly rollbackFailedOptional Starting
+427 silly rollbackFailedOptional Finishing
+428 silly runTopLevelLifecycles Starting
+429 silly runTopLevelLifecycles Finishing
+430 silly install printInstalled
+431 warn enoent ENOENT: no such file or directory, open 'E:\Meteor\cde\package.json'
+432 warn cde No description
+433 warn cde No repository field.
+434 warn cde No README data
+435 warn cde No license field.
+436 verbose stack Error: bcrypt@0.8.7 install: `node-gyp rebuild`
+436 verbose stack Exit status 1
+436 verbose stack     at EventEmitter.<anonymous> (C:\Users\Jerald\AppData\Local\.meteor\packages\meteor-tool\1.4.1\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\lib\utils\lifecycle.js:255:16)
+436 verbose stack     at emitTwo (events.js:87:13)
+436 verbose stack     at EventEmitter.emit (events.js:172:7)
+436 verbose stack     at ChildProcess.<anonymous> (C:\Users\Jerald\AppData\Local\.meteor\packages\meteor-tool\1.4.1\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\lib\utils\spawn.js:40:14)
+436 verbose stack     at emitTwo (events.js:87:13)
+436 verbose stack     at ChildProcess.emit (events.js:172:7)
+436 verbose stack     at maybeClose (internal/child_process.js:829:16)
+436 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+437 verbose pkgid bcrypt@0.8.7
+438 verbose cwd E:\Meteor\cde
+439 error Windows_NT 10.0.14393
+440 error argv "C:\\Users\\Jerald\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.1\\mt-os.windows.x86_32\\dev_bundle\\bin\\node.exe" "C:\\Users\\Jerald\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.1\\mt-os.windows.x86_32\\dev_bundle\\lib\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "bcrypt"
+441 error node v4.5.0
+442 error npm  v3.10.6
+443 error code ELIFECYCLE
+444 error bcrypt@0.8.7 install: `node-gyp rebuild`
+444 error Exit status 1
+445 error Failed at the bcrypt@0.8.7 install script 'node-gyp rebuild'.
+445 error Make sure you have the latest version of node.js and npm installed.
+445 error If you do, this is most likely a problem with the bcrypt package,
+445 error not with npm itself.
+445 error Tell the author that this fails on your system:
+445 error     node-gyp rebuild
+445 error You can get information on how to open an issue for this project with:
+445 error     npm bugs bcrypt
+445 error Or if that isn't available, you can get their info via:
+445 error     npm owner ls bcrypt
+445 error There is likely additional logging output above.
+446 verbose exit [ 1, true ]
