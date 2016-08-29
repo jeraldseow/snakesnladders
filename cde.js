@@ -25,7 +25,7 @@ if (Meteor.isClient){
 		'canPlay':function(){
 			var num = P.find().count()
 			if (num == 4){
-				if (P.findOne({score: 100}, {createdBy: Meteor.userId()})){
+				if (P.findOne({score: 100, createdBy: Meteor.userId()})){
 					return false;
 				}
 				else{
@@ -38,7 +38,7 @@ if (Meteor.isClient){
 		'selectedOne': function(){
 			var playerID =  this._id;
 			var selectedPlayer = Session.get('selectedPlayer')
-			var playerToRollId = P.findOne({canRoll: true}, {createdBy: Meteor.userId()})._id
+			var playerToRollId = P.findOne({canRoll: true, createdBy: Meteor.userId()})._id
 			if (playerID == selectedPlayer){
 				return "youthechosenone"
 			}
@@ -52,11 +52,11 @@ if (Meteor.isClient){
 
 		'selectedPlayer': function(){
 			 var selectedPlayer = Session.get('selectedPlayer');
-			 return P.findOne({_id: selectedPlayer}, {createdBy: Meteor.userId()})
+			 return P.findOne({_id: selectedPlayer, createdBy: Meteor.userId()})
 		},
 
 		'gameOver': function(){	
-			if (P.findOne({score: 100}, {createdBy: Meteor.userId()})){
+			if (P.findOne({score: 100, createdBy: Meteor.userId()})){
 				return true;
 			}
 			else{
@@ -65,7 +65,7 @@ if (Meteor.isClient){
 		},
 
 		'findWinner': function(){
-			return P.findOne({score:100}, {createdBy: Meteor.userId()}).name;
+			return P.findOne({score:100, createdBy: Meteor.userId()}).name;
 		}
 
 	});
@@ -98,7 +98,7 @@ if (Meteor.isClient){
 		},
 
 		'click .roll': function(){
-			var selectedPlayer = P.findOne({canRoll: true}, {createdBy: Meteor.userId()})._id;
+			var selectedPlayer = P.findOne({canRoll: true, createdBy: Meteor.userId()})._id;
 			Meteor.call('roll', selectedPlayer)
 		},
 
@@ -154,22 +154,22 @@ Meteor.methods({
 		check(selectedPlayer, String)
 		check(amount, Number);
 		var currentUserId = Meteor.userId()
-		var curr_score = P.findOne({_id: selectedPlayer}, {createdBy: Meteor.userId()}).score
+		var curr_score = P.findOne({_id: selectedPlayer, createdBy: Meteor.userId()}).score
 		
 		if (SnakesNLadders[curr_score + amount]){
 			amount += SnakesNLadders[curr_score+amount]
 			console.log("snake or laddered!")
 		}
 
-		while (P.findOne({score: curr_score + amount}, {createdBy: Meteor.userId()})){
+		while (P.findOne({score: curr_score + amount, createdBy: Meteor.userId()})){
 					amount += 1
 					console.log("stepped on someone!")
 				}
 
-		if (P.findOne({_id: selectedPlayer}, {createdBy: Meteor.userId()}).score + amount> 100){
-			var sub = P.findOne({_id: selectedPlayer}, {createdBy: Meteor.userId()}).score + amount - 100;
+		if (P.findOne({_id: selectedPlayer, createdBy: Meteor.userId()}).score + amount> 100){
+			var sub = P.findOne({_id: selectedPlayer, createdBy: Meteor.userId()}).score + amount - 100;
 			var newScore = 100 - sub
-			amount = newScore - P.findOne({_id: selectedPlayer}, {createdBy: Meteor.userId()}).score
+			amount = newScore - P.findOne({_id: selectedPlayer, createdBy: Meteor.userId()}).score
 		}
 
 		if (currentUserId){
@@ -186,7 +186,7 @@ Meteor.methods({
 
 	'nextPlayer': function(selectedPlayer){
 		P.update({_id: selectedPlayer}, {$set: {canRoll: false}})
-		if (!P.findOne({createdBy: Meteor.userId()} && {canRoll: true})){
+		if (!P.findOne({createdBy: Meteor.userId(), canRoll: true})){
 			Meteor.call('makeAllTrue', Meteor.userId())
 		}
 	},
@@ -194,7 +194,7 @@ Meteor.methods({
 	'makeAllTrue': function(userId){
 		var arr = P.find({createdBy: Meteor.userId()}).fetch();
 		for (i = 0; i < 4; i++){
-			P.update({_id: arr[i]._id}, {$set: {canRoll: true}});
+			console.log(P.update({_id: arr[i]._id}, {$set: {canRoll: true}}));
 		}
 		console.log(Meteor.userId());
 		console.log("made true");
