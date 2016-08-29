@@ -1,7 +1,7 @@
 import { Random } from 'meteor/random'
 
 if (Meteor.isClient){
-	console.log("Client")
+	// console.log("Client")
 	Meteor.subscribe('thePlayers');
 
 	Template.lead.helpers({
@@ -158,12 +158,12 @@ Meteor.methods({
 		
 		if (SnakesNLadders[curr_score + amount]){
 			amount += SnakesNLadders[curr_score+amount]
-			console.log("snake or laddered!")
+			// console.log("snake or laddered!")
 		}
 
 		while (P.findOne({score: curr_score + amount, createdBy: Meteor.userId()})){
 					amount += 1
-					console.log("stepped on someone!")
+					// console.log("stepped on someone!")
 				}
 
 		if (P.findOne({_id: selectedPlayer, createdBy: Meteor.userId()}).score + amount> 100){
@@ -194,17 +194,17 @@ Meteor.methods({
 	'makeAllTrue': function(userId){
 		var arr = P.find({createdBy: Meteor.userId()}).fetch();
 		for (i = 0; i < 4; i++){
-			console.log(P.update({_id: arr[i]._id}, {$set: {canRoll: true}}));
+			P.update({_id: arr[i]._id}, {$set: {canRoll: true}});
 		}
-		console.log(Meteor.userId());
-		console.log("made true");
+		// console.log(Meteor.userId());
+		// console.log("made true");
 	},
 
 	'resetGame': function(){
 		for (i = 0; i < 4; i++){
 			P.update({_id: P.find().fetch()[i]._id}, {$set: {score: 0}});
 			P.update({_id: P.find().fetch()[i]._id}, {$set: {canRoll: true}})
-		console.log("reset") 
+		// console.log("reset") 
 		}
 	}
 
