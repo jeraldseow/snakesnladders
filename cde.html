@@ -18,13 +18,23 @@
 		{{> addPlayerForm}}
 	{{/if}}
 
-	{{#each player}}
-		<li class = "player {{selectedOne}}"> {{name}} : {{score}}</li>
+	<table style = "width: 60%">
+		<tr>
+			<th> Player Name </th>
+			<th> Player Score </th>
+		</tr>
+		{{#each player}}
+			<tr class = "player {{selectedOne}}">
+				<th> {{name}} </th>
+				<th> {{score}} </th>
+			</tr>
 		{{/each}}
+	</table>	
 
 	{{#if selectedPlayer}}
 		<!-- <li><button class = "increment"> Give 5 points </button> <button class = "dec"> Take 5 points </button></li> -->
-		<li>Selected Player: {{selectedPlayer.name}}</li><br><button class = "remove"> Remove player </button><br>
+		<div class = "div">Selected Player: {{selectedPlayer.name}}</div>
+		<br><button class = "remove"> Remove player </button><br>
 	{{/if}}
 
 	<br>

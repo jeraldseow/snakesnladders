@@ -12,4 +12,31 @@
 
 table, th, td {
     border: 1px solid black;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper{
+	text-align: center;
+}
+
+.roll{
+	margin:auto;
+	display:block;
+}
+
+.remove{
+	margin:auto;
+	display:block;
+}
+
+.reset{
+	margin:auto;
+	display:block;
+}
+
+.div{
+	margin:auto;
+	display:block;
 }
