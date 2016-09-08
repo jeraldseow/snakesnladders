@@ -36,7 +36,7 @@ table, th, td {
 	display:block;
 }
 
-.div{
-	margin:auto;
-	display:block;
+p.div{
+	font-size:200%;
+	text-align: center;
 }

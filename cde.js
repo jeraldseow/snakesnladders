@@ -201,9 +201,10 @@ Meteor.methods({
 	},
 
 	'resetGame': function(){
+		var arr = P.find({createdBy: Meteor.userId()}).fetch();
 		for (i = 0; i < 4; i++){
-			P.update({_id: P.find().fetch()[i]._id}, {$set: {score: 0}});
-			P.update({_id: P.find().fetch()[i]._id}, {$set: {canRoll: true}})
+			P.update({_id: arr[i]._id}, {$set: {score: 0}});
+			P.update({_id: arr[i]._id}, {$set: {canRoll: true}})
 		// console.log("reset") 
 		}
 	}

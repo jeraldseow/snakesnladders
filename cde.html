@@ -1,7 +1,7 @@
 <head>
     <title>Snakes and Ladders!</title>
 </head>
-<body>
+<body style="background-color:powderblue;">
 
     <h1>Snakes And Ladders</h1>
     {{> loginButtons}}
@@ -33,8 +33,8 @@
 
 	{{#if selectedPlayer}}
 		<!-- <li><button class = "increment"> Give 5 points </button> <button class = "dec"> Take 5 points </button></li> -->
-		<div class = "div">Selected Player: {{selectedPlayer.name}}</div>
-		<br><button class = "remove"> Remove player </button><br>
+		<p class = "div">Selected Player: {{selectedPlayer.name}}</p>
+		<button class = "remove"> Remove player </button><br>
 	{{/if}}
 
 	<br>
